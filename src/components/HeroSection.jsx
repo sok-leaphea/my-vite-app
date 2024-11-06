@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <div className="flex flex-col md:flex-row bg-purple-50 items-center justify-center p-6 h-full">
+    <div className="flex flex-col md:flex-row bg-purple-50 items-center justify-evenly p-6 h-full">
           <div className="w-full md:w-1/2 lg:w-1/4 text-center md:text-left p-6">
             <h1 className="text-gray-700 text-3xl md:text-4xl font-extrabold mb-4">
               Pet Store & Beyond
