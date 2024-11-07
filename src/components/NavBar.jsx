@@ -1,13 +1,23 @@
+import { NavLink } from "react-router-dom";
+
 export default function NavBar() {
   return (
     <div className="flex items-center justify-between px-12 py-4">
-      <div className="text-black font-bold">PETWORLD</div>
+      <div className="text-black text-3xl font-bold">PETWORLD</div>
       <div className="hidden md:flex">
         <ul className="flex space-x-8">
-          <li className="text-black hover:text-white">Home</li>
-          <li className="text-black hover:text-white">Shop</li>
-          <li className="text-black hover:text-white">About</li>
-          <li className="text-black hover:text-white">Contact</li>
+          <li className="text-black">
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li className="text-black">
+            <NavLink to="/shop">Shop</NavLink>
+          </li>
+          <li className="text-black">
+            <NavLink to="/about">About</NavLink>
+          </li>
+          <li className="text-black">
+            <NavLink to="/contact">Contact</NavLink>
+          </li>
         </ul>
       </div>
       <div className="bg-white p-2">
